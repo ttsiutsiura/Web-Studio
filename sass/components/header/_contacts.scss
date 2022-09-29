@@ -1,0 +1,33 @@
+.studio-contacts {
+  margin-left: auto;
+
+  display: inline-flex;
+}
+
+.studio-contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.studio-contacts__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  display: flex;
+  align-items: center;
+  color: $secondary-text-color;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.studio-contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

@@ -1,0 +1,42 @@
+.work-section {
+  padding-top: 0px;
+}
+
+.work-section__title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.work-list {
+  display: flex;
+}
+
+.work-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.thumb {
+  position: relative;
+
+  width: 370px;
+}
+
+.thumb__text {
+  position: absolute;
+  bottom: 0;
+
+  width: 370px;
+  height: 70px;
+  color: $primary-background-color;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(47, 48, 58, 80%);
+}
