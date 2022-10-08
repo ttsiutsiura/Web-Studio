@@ -1,5 +1,14 @@
 .footer-social {
-  margin-right: 93px;
+  margin-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    width: 231px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    width: 231px;
+  }
 }
 
 .footer-social__text {
@@ -11,13 +20,28 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .our-social-list {
-  display: inline-flex;
-
+  display: flex;
+  justify-content: center;
   gap: 10px;
-  width: 206px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+
+    gap: 10px;
+    width: 206px;
+  }
 }
 
 .our-social-list__link {

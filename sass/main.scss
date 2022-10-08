@@ -1,9 +1,11 @@
 @import "./utils/variables";
+@import "./utils/breakpoints";
 @import "./components/global";
 @import "./components/header/base";
 @import "./components/header/logo";
 @import "./components/header/navigation";
 @import "./components/header/contacts";
+@import "./components/header/menu";
 @import "./components/main/index/hero";
 @import "./components/main/index/advantages";
 @import "./components/main/index/work";

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-07</title>
+    <title>goit-markup-hw-08</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,14 +18,16 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!--Шапка сайта-->
+    <!--ШАПКА САЙТА-->
 
     <!--Лого и навигация-->
     <header class="header header-portfolio">
-      <div class="container container-header">
+      <div class="container header-container">
+        <!--Лого-->
         <a href="./index.html" class="header__logo">
           <span class="header__logo-bluepart">Web</span>Studio</a
         >
+        <!--Навигация-->
         <nav>
           <ul class="studio-nav">
             <li class="studio-nav__item">
@@ -46,7 +48,7 @@
         <ul class="studio-contacts">
           <li class="studio-contacts__item">
             <a href="mailto:info@devstudio.com" class="studio-contacts__link">
-              <svg class="studio-contacts__icon" width="16" height="12">
+              <svg class="studio-contacts__icon-envelope" width="16" height="12">
                 <use href="./images/main/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
@@ -54,17 +56,28 @@
           </li>
           <li class="studio-contacts__item">
             <a href="tel:+380961111111" class="studio-contacts__link">
-              <svg class="studio-contacts__icon" width="10" height="16">
+              <svg class="studio-contacts__icon-phone" width="10" height="16">
                 <use href="./images/main/icons.svg#icon-phone"></use>
               </svg>
               +380961111111
             </a>
           </li>
         </ul>
+
+        <!--Кнопка телефонного меню-->
+        <button
+          class="menu-button js-open-menu"
+          aria-label="false"
+          aria-controls="Переключатель для мобильного меню"
+        >
+          <svg width="40" height="40">
+            <use href="./images/main/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
-    <!--Уникальный контент сайта-->
+    <!--УНИКАЛЬНЫЙ КОНТЕНТ САЙТА-->
 
     <!--Фильтр-->
     <main>
@@ -94,13 +107,33 @@
             <li class="project-list__item">
               <a href="" class="project-list__link">
                 <div class="project-list__thumb">
-                  <img
-                    class="project-list__image"
-                    src="./images/main/our_projects/macbookpro.jpg"
-                    alt="Відкрита вкладка проєкту"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/main/our_projects/img_l-@1x_370.webp 1x,
+                        ./images/main/our_projects/img_l-@2x_740.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/main/our_projects/img_m-@1x_354.webp 1x,
+                        ./images/main/our_projects/img_m-@2x_708.webp 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./images/main/our_projects/img_s-@1x_450.webp 1x,
+                        ./images/main/our_projects/img_s-@2x_900.webp 2x
+                      "
+                    />
+                    <img
+                      class="project-list__image"
+                      src="./images/main/our_projects/img_s-@1x_450.webp"
+                      alt="Відкрита вкладка проєкту"
+                    />
+                  </picture>
                   <p class="project-list__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -116,13 +149,33 @@
             <li class="project-list__item">
               <a href="" class="project-list__link">
                 <div class="project-list__thumb">
-                  <img
-                    class="project-list__image"
-                    src="./images/main/our_projects/basketball.jpg"
-                    alt="Дизайн постера"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/main/our_projects/img_l-@1x_370-1.webp 1x,
+                        ./images/main/our_projects/img_l-@2x_740-1.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/main/our_projects/img_m-@1x_354-1.webp 1x,
+                        ./images/main/our_projects/img_m-@2x_708-1.webp 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./images/main/our_projects/img_s-@1x_450-1.webp 1x,
+                        ./images/main/our_projects/img_s-@2x_900-1.webp 2x
+                      "
+                    />
+                    <img
+                      class="project-list__image"
+                      src="./images/main/our_projects/img_s-@1x_450-1.webp"
+                      alt="Дизайн постера"
+                    />
+                  </picture>
                   <p class="project-list__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -138,13 +191,33 @@
             <li class="project-list__item">
               <a href="" class="project-list__link">
                 <div class="project-list__thumb">
-                  <img
-                    class="project-list__image"
-                    src="./images/main/our_projects/seafood.jpg"
-                    alt="Лого"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/main/our_projects/img_l-@1x_370-2.webp 1x,
+                        ./images/main/our_projects/img_l-@2x_740-2.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/main/our_projects/img_m-@1x_354-2.webp 1x,
+                        ./images/main/our_projects/img_m-@2x_708-2.webp 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./images/main/our_projects/img_s-@1x_450-2.webp 1x,
+                        ./images/main/our_projects/img_s-@2x_900-2.webp 2x
+                      "
+                    />
+                    <img
+                      class="./images/main/our_projects/img_s-@1x_450-2.webp"
+                      src="./images/main/our_projects/seafood.webp"
+                      alt="Лого"
+                    />
+                  </picture>
                   <p class="project-list__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -160,13 +233,33 @@
             <li class="project-list__item">
               <a href="" class="project-list__link">
                 <div class="project-list__thumb">
-                  <img
-                    class="project-list__image"
-                    src="./images/main/our_projects/headphones.jpg"
-                    alt="Навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/main/our_projects/img_l-@1x_370-3.webp 1x,
+                        ./images/main/our_projects/img_l-@2x_740-3.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/main/our_projects/img_m-@1x_354-3.webp 1x,
+                        ./images/main/our_projects/img_m-@2x_708-3.webp 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./images/main/our_projects/img_s-@1x_450-3.webp 1x,
+                        ./images/main/our_projects/img_s-@2x_900-3.webp 2x
+                      "
+                    />
+                    <img
+                      class="project-list__image"
+                      src="./images/main/our_projects/img_s-@1x_450-3.webp"
+                      alt="Навушники"
+                    />
+                  </picture>
                   <p class="project-list__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -182,13 +275,33 @@
             <li class="project-list__item">
               <a href="" class="project-list__link">
                 <div class="project-list__thumb">
-                  <img
-                    class="project-list__image"
-                    src="./images/main/our_projects/boxes.jpg"
-                    alt="Коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/main/our_projects/img_l-@1x_370-4.webp 1x,
+                        ./images/main/our_projects/img_l-@2x_740-4.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/main/our_projects/img_m-@1x_354-4.webp 1x,
+                        ./images/main/our_projects/img_m-@2x_708-4.webp 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./images/main/our_projects/img_s-@1x_450-4.webp 1x,
+                        ./images/main/our_projects/img_s-@2x_900-4.webp 2x
+                      "
+                    />
+                    <img
+                      class="./images/main/our_projects/img_s-@1x_450-4.webp"
+                      src="./images/main/our_projects/boxes.webp"
+                      alt="Коробки"
+                    />
+                  </picture>
                   <p class="project-list__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -204,13 +317,33 @@
             <li class="project-list__item">
               <a href="" class="project-list__link">
                 <div class="project-list__thumb">
-                  <img
-                    class="project-list__image"
-                    src="./images/main/our_projects/macos.jpg"
-                    alt="Відкрита вкладка проєкту"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/main/our_projects/img_l-@1x_370-5.webp 1x,
+                        ./images/main/our_projects/img_l-@2x_740-5.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/main/our_projects/img_m-@1x_354-5.webp 1x,
+                        ./images/main/our_projects/img_m-@2x_708-5.webp 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./images/main/our_projects/img_s-@1x_450-5.webp 1x,
+                        ./images/main/our_projects/img_s-@2x_900-5.webp 2x
+                      "
+                    />
+                    <img
+                      class="./images/main/our_projects/img_s-@1x_450-5.webp"
+                      src="./images/main/our_projects/macos.webp"
+                      alt="Відкрита вкладка проєкту"
+                    />
+                  </picture>
                   <p class="project-list__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -226,13 +359,33 @@
             <li class="project-list__item">
               <a href="" class="project-list__link">
                 <div class="project-list__thumb">
-                  <img
-                    class="project-list__image"
-                    src="./images/main/our_projects/magazine.jpg"
-                    alt="Дизайн видання"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/main/our_projects/img_l-@1x_370-6.webp 1x,
+                        ./images/main/our_projects/img_l-@2x_740-6.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/main/our_projects/img_m-@1x_354-6.webp 1x,
+                        ./images/main/our_projects/img_m-@2x_708-6.webp 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./images/main/our_projects/img_s-@1x_450-6.webp 1x,
+                        ./images/main/our_projects/img_s-@2x_900-6.webp 2x
+                      "
+                    />
+                    <img
+                      class="./images/main/our_projects/img_s-@1x_450-6.webp"
+                      src="./images/main/our_projects/magazine.webp"
+                      alt="Дизайн видання"
+                    />
+                  </picture>
                   <p class="project-list__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -248,13 +401,33 @@
             <li class="project-list__item">
               <a href="" class="project-list__link">
                 <div class="project-list__thumb">
-                  <img
-                    class="project-list__image"
-                    src="./images/main/our_projects/labeltag.jpg"
-                    alt="Маркетинговий проєкт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/main/our_projects/img_l-@1x_370-7.webp 1x,
+                        ./images/main/our_projects/img_l-@2x_740-7.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/main/our_projects/img_m-@1x_354-7.webp 1x,
+                        ./images/main/our_projects/img_m-@2x_708-7.webp 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./images/main/our_projects/img_s-@1x_450-7.webp 1x,
+                        ./images/main/our_projects/img_s-@2x_900-7.webp 2x
+                      "
+                    />
+                    <img
+                      class="project-list__image"
+                      src="./images/main/our_projects/img_s-@1x_450-7.webp"
+                      alt="Маркетинговий проєкт"
+                    />
+                  </picture>
                   <p class="project-list__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -270,13 +443,33 @@
             <li class="project-list__item">
               <a href="" class="project-list__link">
                 <div class="project-list__thumb">
-                  <img
-                    class="project-list__image"
-                    src="./images/main/our_projects/macbookair.jpg"
-                    alt="Додаток для пристроїв"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/main/our_projects/img_l-@1x_370-8.webp 1x,
+                        ./images/main/our_projects/img_l-@2x_740-8.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/main/our_projects/img_m-@1x_354-8.webp 1x,
+                        ./images/main/our_projects/img_m-@2x_708-8.webp 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./images/main/our_projects/img_s-@1x_450-8.webp 1x,
+                        ./images/main/our_projects/img_s-@2x_900-8.webp 2x
+                      "
+                    />
+                    <img
+                      class="project-list__image"
+                      src="./images/main/our_projects/img_s-@1x_450-8.webp"
+                      alt="Додаток для пристроїв"
+                    />
+                  </picture>
                   <p class="project-list__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -294,14 +487,16 @@
       </section>
     </main>
 
-    <!--Подвал сайта-->
+    <!--ПОДВАЛ САЙТА-->
 
     <footer class="footer">
       <div class="footer container">
         <div class="footer-address">
+          <!--Лого-->
           <a href="./index.html" class="footer-address__logo">
             <span class="footer-address__logo-bluepart">Web</span>Studio</a
           >
+          <!--Адресс-->
           <address>
             <ul class="address-list">
               <li class="address-list__item">
@@ -324,6 +519,8 @@
             </ul>
           </address>
         </div>
+
+        <!--Социальные сети-->
         <div class="footer-social">
           <p class="footer-social__text">Приєднуйтесь</p>
           <ul class="our-social-list">
@@ -357,6 +554,8 @@
             </li>
           </ul>
         </div>
+
+        <!--Рассылка-->
         <div class="footer-mailing">
           <form class="footer-form">
             <label for="mailing" class="footer-form__label"> Підпишіться на розсилку </label>
@@ -380,6 +579,61 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+
+    <!--Модальное телефонное меню-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button
+        class="menu-toggle js-close-menu"
+        aria-label="false"
+        aria-controls="Переключатель для мобильного меню"
+      >
+        <svg width="40" height="40">
+          <use href="./images/main/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="menu-nav">
+        <li class="menu-nav__item">
+          <a href="./index.html" class="menu-nav__link">Студія</a>
+        </li>
+        <li class="menu-nav__item">
+          <a href="./portfolio.html" class="menu-nav__link menu-nav__link--current">Портфоліо</a>
+        </li>
+        <li class="menu-nav__item">
+          <a href="index.html" class="menu-nav__link">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="menu-contacts">
+        <li class="menu-contacts__item">
+          <a href="tel:+380961111111" class="menu-contacts__link--accent"> +380961111111 </a>
+        </li>
+        <li class="menu-contacts__item">
+          <a href="mailto:info@devstudio.com" class="menu-contacts__link"> info@devstudio.com </a>
+        </li>
+      </ul>
+
+      <ul class="menu-social">
+        <li class="menu-social__item">
+          <a href="" class="menu-social__link">Instagram</a>
+        </li>
+        <li class="menu-social__item">
+          <a href="" class="menu-social__link">Twitter</a>
+        </li>
+        <li class="menu-social__item"><a href=""></a>Facebook</li>
+        <li class="menu-social__item">
+          <a href="" class="menu-social__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <!--Скрипты-->
+    <script src="./js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -1,5 +1,9 @@
 .studio-nav {
-  display: flex;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .studio-nav__item:not(:last-child) {
@@ -33,7 +37,7 @@
       width: 100%;
       height: 4px;
 
-      content: "";
+      content: '';
       background-color: $accent-color;
       border-radius: 2px;
     }

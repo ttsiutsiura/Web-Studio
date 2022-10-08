@@ -1,15 +1,23 @@
 .footer-address__logo {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
+  color: $primary-background-color;
+  font-family: $font-logo;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
     display: inline-block;
-    color: $primary-background-color;
-    font-family: $font-logo;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
+  }
 }
 
 .footer-address__logo-bluepart {
-    color: $accent-color;
+  color: $accent-color;
 }

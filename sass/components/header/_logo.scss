@@ -1,11 +1,17 @@
 .header__logo {
-  margin-right: 93px;
-
   color: #000;
   font-family: $font-logo;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 87px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 
   .header__logo-bluepart {
     color: $accent-color;
