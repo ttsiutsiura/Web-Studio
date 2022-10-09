@@ -225,7 +225,7 @@
   border-radius: 4px;
 
   .agreements__checkbox:checked + & {
-    background-image: url(./images/main/icons.svg#icon-check);
+    background-image: url(../images/main/check.svg);
     background-size: contain;
     background-origin: border-box;
     border-color: transparent;
@@ -246,6 +246,7 @@
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  color: $secondary-text-color;
 
   @media screen and (max-width: 1199px) {
     font-size: 12px;

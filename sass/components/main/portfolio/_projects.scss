@@ -17,6 +17,10 @@
   @media screen and (min-width: 1200px) {
     width: calc((100% - 6 * 15px) / 3);
   }
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .project-list__link {

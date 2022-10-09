@@ -487,6 +487,7 @@ input {
   .hero-section {
     height: 600px;
     padding: 200px 0;
+    margin: 0 auto;
   }
 }
 
@@ -608,6 +609,7 @@ input {
   line-height: 1.14;
   text-transform: uppercase;
   font-size: 14px;
+  text-align: center;
 }
 
 .advantages-list__text {
@@ -1119,7 +1121,7 @@ input {
   border-radius: 4px;
 }
 .agreements__checkbox:checked + .agreements__checkbox-custom {
-  background-image: url(./images/main/icons.svg#icon-check);
+  background-image: url(../images/main/check.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: transparent;
@@ -1142,6 +1144,7 @@ input {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  color: #757575;
 }
 @media screen and (max-width: 1199px) {
   .agreements__politic {
@@ -1214,7 +1217,7 @@ input {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 462px) and (max-width: 767px) {
   .button-list__item:nth-child(3) {
     margin-right: 20px;
   }
@@ -1269,6 +1272,9 @@ input {
   .project-list__item {
     width: calc((100% - 90px) / 3);
   }
+}
+.project-list__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .project-list__link {
@@ -1446,8 +1452,10 @@ footer {
   color: #ffffff;
 }
 
-.footer-social {
-  margin-top: 60px;
+@media screen and (max-width: 767px) {
+  .footer-social {
+    margin-top: 60px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer-social {

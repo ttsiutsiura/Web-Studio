@@ -1,5 +1,7 @@
 .footer-social {
-  margin-top: 60px;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 
   @media screen and (min-width: 768px) {
     width: 231px;

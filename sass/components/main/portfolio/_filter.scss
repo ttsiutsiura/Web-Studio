@@ -16,7 +16,7 @@
 }
 
 .button-list__item:nth-child(3) {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 462px) and (max-width: 767px) {
     margin-right: 20px;
   }
 }
