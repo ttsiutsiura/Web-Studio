@@ -31,16 +31,18 @@
 
 .thumb__text {
   position: absolute;
-  bottom: 0;
 
+  bottom: 0;
   width: 370px;
   height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: $primary-background-color;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   background-color: rgb(47, 48, 58, 80%);
 }

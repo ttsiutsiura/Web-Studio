@@ -39,16 +39,15 @@
   }
 
   @media screen and (min-width: 1200px) {
-    display: inline-flex;
-
-    gap: 10px;
     width: 206px;
+    
+    display: inline-flex;
+    gap: 10px;
   }
 }
 
 .our-social-list__link {
   padding: 0px;
-
   width: 44px;
   height: 44px;
 

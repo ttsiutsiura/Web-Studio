@@ -48,7 +48,6 @@
   &::placeholder {
     display: flex;
     align-items: center;
-
     font-family: $primary-font;
     font-style: normal;
     font-weight: 400;
@@ -68,9 +67,10 @@
 }
 
 .footer-form__thumb {
-  display: flex;
   margin-top: 20px;
   width: 100%;
+
+  display: flex;
 
   @media screen and (max-width: 1199px) {
     flex-direction: column;
@@ -112,6 +112,7 @@
 }
 
 .footer-form__send-icon {
-  fill: currentColor;
   margin-left: 10px;
+  
+  fill: currentColor;
 }

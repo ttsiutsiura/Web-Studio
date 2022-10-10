@@ -1,6 +1,5 @@
 .hero-section {
   padding: 118px 0px;
-
   max-width: 1600px;
   height: 400px;
 
@@ -37,9 +36,9 @@
   }
 
   @media screen and (min-width: 1200px) {
-    height: 600px;
-    padding: 200px 0;
     margin: 0 auto;
+    padding: 200px 0;
+    height: 600px;
   }
 }
 
@@ -62,6 +61,7 @@
 
   @media screen and (min-width: 1200px) {
     width: 696px;
+    
     font-size: 44px;
   }
 }
