@@ -69,10 +69,14 @@
   &:focus {
     color: $accent-color;
   }
+
+  @media screen and (max-width: 479px) {
+    font-size: 36px;
+  }
 }
 
 .menu-contacts__item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .menu-contacts__link {
@@ -99,11 +103,19 @@
 }
 
 .menu-contacts__item:nth-child(1) {
-  font-size: 34px;
+  font-size: 28px;
+
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+  }
 }
 
 .menu-contacts__item:nth-child(2) {
-  font-size: 24px;
+  font-size: 20px;
+
+  @media screen and (min-width: 480px) {
+    font-size: 24px;
+  }
 }
 
 .menu-contacts__icon-envelope {
@@ -118,42 +130,65 @@
   fill: currentColor;
 }
 
-.menu-social {
+// .menu-social {
+//   margin-top: 64px;
+
+//   display: flex;
+//   flex-wrap: wrap;
+//   font-family: 'Roboto';
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 18px;
+//   line-height: 1.2;
+//   letter-spacing: 0.02em;
+//   color: $accent-color;
+
+//   @media screen and (max-width: 479px) {
+//     font-size: 12px;
+//   }
+// }
+
+// .menu-social__item:nth-child(1) {
+//   padding-right: 10px;
+// }
+
+// .menu-social__item:nth-child(2) {
+//   padding-left: 10px;
+//   padding-right: 10px;
+// }
+
+// .menu-social__item:nth-child(3) {
+//   padding-left: 10px;
+//   padding-right: 10px;
+// }
+
+// .menu-social__item:nth-child(4) {
+//   padding-left: 10px;
+// }
+
+// .menu-social__item:not(:last-child) {
+//   border-right: 1px solid rgba(33, 33, 33, 0.2);
+// }
+
+.menu-social-list {
   margin-top: 64px;
+  display: flex;
+  gap: 10px;
+}
+
+.menu-social-list__link {
+  padding: 0px;
+  width: 44px;
+  height: 44px;
 
   display: flex;
-  flex-wrap: wrap;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: $accent-color;
-
-  @media screen and (max-width: 479px) {
-    font-size: 14px;
-  }
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: $primary-background-color;
+  background-color: $accent-color;
 }
 
-.menu-social__item:nth-child(1) {
-  padding-right: 10px;
-}
-
-.menu-social__item:nth-child(2) {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.menu-social__item:nth-child(3) {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.menu-social__item:nth-child(4) {
-  padding-left: 10px;
-}
-
-.menu-social__item:not(:last-child) {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+.menu-social-list__icon {
+  fill: currentColor;
 }
