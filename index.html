@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-08</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,31 +18,31 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!--ШАПКА САЙТА-->
+    <!--HEADER-->
 
     <header class="header">
       <div class="container header-container">
-        <!--Лого-->
+        <!--Logo-->
         <a href="./index.html" class="header__logo">
           <span class="header__logo-bluepart">Web</span>Studio</a
         >
 
-        <!--Навигация-->
+        <!--Navigation-->
         <nav>
           <ul class="studio-nav">
             <li class="studio-nav__item">
-              <a href="./index.html" class="studio-nav__link studio-nav__link--current">Студія</a>
+              <a href="./index.html" class="studio-nav__link studio-nav__link--current">Studio</a>
             </li>
             <li class="studio-nav__item">
-              <a href="./portfolio.html" class="studio-nav__link">Портфоліо</a>
+              <a href="./portfolio.html" class="studio-nav__link">Portfolio</a>
             </li>
             <li class="studio-nav__item">
-              <a href="index.html" class="studio-nav__link">Контакти</a>
+              <a href="index.html" class="studio-nav__link">Contacts</a>
             </li>
           </ul>
         </nav>
 
-        <!--Контакты-->
+        <!--Contacts-->
         <ul class="studio-contacts">
           <li class="studio-contacts__item">
             <a href="mailto:info@devstudio.com" class="studio-contacts__link">
@@ -53,20 +53,20 @@
             </a>
           </li>
           <li class="studio-contacts__item">
-            <a href="tel:+380961111111" class="studio-contacts__link">
+            <a href="tel:+1 212-772-4150" class="studio-contacts__link">
               <svg class="studio-contacts__icon-phone" width="10" height="16">
                 <use href="./images/main/icons.svg#icon-phone"></use>
               </svg>
-              +380961111111
+              +1 212-772-4150
             </a>
           </li>
         </ul>
 
-        <!--Телефонное меню-->
+        <!--Mobile Menu-->
         <button
           class="menu-button js-open-menu"
           aria-label="false"
-          aria-controls="Переключатель для мобильного меню"
+          aria-controls="Switcher for mobile menu"
         >
           <svg width="40" height="40">
             <use href="./images/main/icons.svg#icon-menu"></use>
@@ -75,54 +75,58 @@
       </div>
     </header>
 
-    <!--УНИКАЛЬНЫЙ КОНТЕНТ САЙТА-->
+    <!--MAIN CONTENT-->
 
-    <!--Герой-->
+    <!--Hero-->
     <main class="main">
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button data-modal-open type="button" class="hero-button">Замовити послугу</button>
+          <h1 class="hero-title">Effective solutions for your business</h1>
+          <button data-modal-open type="button" class="hero-button">Request our service</button>
         </div>
       </section>
 
-      <!--Преимущества-->
+      <!--Advantages-->
       <section class="advatages-section">
         <div class="container">
-          <h2 class="visually-hidden">Особливості та переваги</h2>
+          <h2 class="visually-hidden">Features and advantages</h2>
           <ul class="advantages-list">
             <li class="advantages-list__item">
-              <h3 class="advantages-list__title">Увага до деталей</h3>
+              <h3 class="advantages-list__title">Attention to details</h3>
               <p class="advantages-list__text">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                We go into all the details and processes of your business to develop a customized
+                solution..
               </p>
             </li>
             <li class="advantages-list__item">
-              <h3 class="advantages-list__title">Пунктуальність</h3>
+              <h3 class="advantages-list__title">Punctuality</h3>
               <p class="advantages-list__text">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                With us, you can feel safe and secure. An important principle of the company:
+                respect your time and deadlines.
               </p>
             </li>
             <li class="advantages-list__item">
-              <h3 class="advantages-list__title">Планування</h3>
+              <h3 class="advantages-list__title">Planning</h3>
               <p class="advantages-list__text">
-                Так само консультація з широким активом значною мірою зумовлює.
+                You will be able to observe and participate in every phase of solution development
+                and implementation.
               </p>
             </li>
             <li class="advantages-list__item">
-              <h3 class="advantages-list__title">Сучасні технології</h3>
+              <h3 class="advantages-list__title">Modern technologies</h3>
               <p class="advantages-list__text">
-                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                We use innovative tools to solve assigned tasks. It's time to simplify work
+                processes.
               </p>
             </li>
           </ul>
         </div>
       </section>
 
-      <!--Деятельность-->
+      <!--Work-->
       <section class="work-section">
         <div class="container">
-          <h2 class="work-section__title">Чим ми займаємоcя</h2>
+          <h2 class="work-section__title">What we do</h2>
           <ul class="work-list">
             <li class="work-list__item">
               <div class="thumb">
@@ -132,9 +136,9 @@
                     ./images/main/what_we_do/img_1-@2x.webp 2x
                   "
                   src="./images/main/what_we_do/img_1.webp"
-                  alt="Людина верстає"
+                  alt="A person is coding"
                 />
-                <p class="thumb__text">Десктопні додатки</p>
+                <p class="thumb__text">Desktop apps</p>
               </div>
             </li>
             <li class="work-list__item">
@@ -145,9 +149,9 @@
                     ./images/main/what_we_do/img_2-@2x.webp 2x
                   "
                   src="./images/main/what_we_do/img_2-@1x.webp"
-                  alt="Людина розробляє дизайн для телефонного додатку"
+                  alt="A person is developing a design for a mobile app"
                 />
-                <p class="thumb__text">Мобільні додатки</p>
+                <p class="thumb__text">Mobile apps</p>
               </div>
             </li>
             <li class="work-list__item">
@@ -158,51 +162,51 @@
                     ./images/main/what_we_do/img_3-@2x.webp 2x
                   "
                   src="./images/main/what_we_do/img_3-@1x.webp"
-                  alt="Людина обирає колір з палітри на планшеті"
+                  alt="A person is choosing a color from a palette"
                 />
-                <p class="thumb__text">Дизайнерські рішення</p>
+                <p class="thumb__text">Design Solutions</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
 
-      <!--Команда-->
+      <!--Team-->
       <section class="team-section">
         <div class="container">
-          <h2 class="team-section__title">Наша команда</h2>
+          <h2 class="team-section__title">Our Team</h2>
           <ul class="team-list">
             <li class="team-list__item">
               <picture>
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ./images/main/our_team/ighor_l-@1x_270.webp 1x,
-                    ./images/main/our_team/ighor_l-@2x_440.webp 2x
+                    ./images/main/our_team/christopher_l-@1x_270.webp 1x,
+                    ./images/main/our_team/christopher_l-@2x_440.webp 2x
                   "
                 />
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    ./images/main/our_team/ighor_m-@1x_354.webp 1x,
-                    ./images/main/our_team/ighor_m-@2x_708.webp 2x
+                    ./images/main/our_team/christopher_m-@1x_354.webp 1x,
+                    ./images/main/our_team/christopher_m-@2x_708.webp 2x
                   "
                 />
                 <source
                   srcset="
-                    ./images/main/our_team/ighor_s-@1x_450.webp 1x,
-                    ./images/main/our_team/ighor_s-@2x_900.webp 2x
+                    ./images/main/our_team/christopher_s-@1x_450.webp 1x,
+                    ./images/main/our_team/christopher_s-@2x_900.webp 2x
                   "
                 />
                 <img
-                  src="./images/main/our_team/ighor_s-1@x_450.webp"
+                  src="./images/main/our_team/christopher_s-1@x_450.webp"
                   alt="Ігор Дем'яненко"
                   class="team-list__image"
                 />
               </picture>
 
               <div class="team-list__statements">
-                <h3 class="team-list__name">Ігор Дем'яненко</h3>
+                <h3 class="team-list__name">Christopher Walker</h3>
                 <p class="team-list__position">Product Designer</p>
                 <ul class="social-list">
                   <li class="social-list__item">
@@ -266,7 +270,7 @@
               </picture>
 
               <div class="team-list__statements">
-                <h3 class="team-list__name">Ольга Рєпіна</h3>
+                <h3 class="team-list__name">Kylie Evans</h3>
                 <p class="team-list__position">Frontend Developer</p>
                 <ul class="social-list">
                   <li class="social-list__item">
@@ -305,32 +309,32 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ./images/main/our_team/mykola_l-@1x_270.webp 1x,
-                    ./images/main/our_team/mykola_l-@2x_440.webp 2x
+                    ./images/main/our_team/ryan_l-@1x_270.webp 1x,
+                    ./images/main/our_team/ryan_l-@2x_440.webp 2x
                   "
                 />
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    ./images/main/our_team/mykola_m-@1x_354.webp 1x,
-                    ./images/main/our_team/mykola_m-@2x_708.webp 2x
+                    ./images/main/our_team/ryan_m-@1x_354.webp 1x,
+                    ./images/main/our_team/ryan_m-@2x_708.webp 2x
                   "
                 />
                 <source
                   srcset="
-                    ./images/main/our_team/mykola_s-@1x_450.webp 1x,
-                    ./images/main/our_team/mykola_s-@2x_900.webp 2x
+                    ./images/main/our_team/ryan_s-@1x_450.webp 1x,
+                    ./images/main/our_team/ryan_s-@2x_900.webp 2x
                   "
                 />
                 <img
-                  src="./images/main/our_team/mykola_s-@1x_450.webp"
+                  src="./images/main/our_team/ryan_s-@1x_450.webp"
                   alt="Микола Тарасов"
                   class="team-list__image"
                 />
               </picture>
 
               <div class="team-list__statements">
-                <h3 class="team-list__name">Микола Тарасов</h3>
+                <h3 class="team-list__name">Ryan Harris</h3>
                 <p class="team-list__position">Marketing</p>
                 <ul class="social-list">
                   <li class="social-list__item">
@@ -369,31 +373,31 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ./images/main/our_team/mikhailo_l-@1x_270.webp 1x,
-                    ./images/main/our_team/mikhailo_l-@2x_440.webp 2x
+                    ./images/main/our_team/tyler_l-@1x_270.webp 1x,
+                    ./images/main/our_team/tyler_l-@2x_440.webp 2x
                   "
                 />
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    ./images/main/our_team/mikhailo_m-@1x_354.webp 1x,
-                    ./images/main/our_team/mikhailo_m-@2x_708.webp 2x
+                    ./images/main/our_team/tyler_m-@1x_354.webp 1x,
+                    ./images/main/our_team/tyler_m-@2x_708.webp 2x
                   "
                 />
                 <source
                   srcset="
-                    ./images/main/our_team/mikhailo_s-@1x_450.webp 1x,
-                    ./images/main/our_team/mikhailo_s-@2x_900.webp 2x
+                    ./images/main/our_team/tyler_s-@1x_450.webp 1x,
+                    ./images/main/our_team/tyler_s-@2x_900.webp 2x
                   "
                 />
                 <img
-                  src="./images/main/our_team/mikhailo_s-@1x_450.webp"
+                  src="./images/main/our_team/tyler_s-@1x_450.webp"
                   alt="Михайло Єрмаков"
                   class="team-list__image"
                 />
               </picture>
               <div class="team-list__statements">
-                <h3 class="team-list__name">Михайло Єрмаков</h3>
+                <h3 class="team-list__name">Tyler Moore</h3>
                 <p class="team-list__position">UI Designer</p>
                 <ul class="social-list">
                   <li class="social-list__item">
@@ -431,10 +435,10 @@
         </div>
       </section>
 
-      <!--Клиенты-->
+      <!--Clients-->
       <section class="client-section">
         <div class="container">
-          <h2 class="client-section__title">Постійні клієнти</h2>
+          <h2 class="client-section__title">Regular Customers</h2>
           <ul class="client-list">
             <li class="client-list__item">
               <a href="" class="client-list__link">
@@ -483,16 +487,16 @@
       </section>
     </main>
 
-    <!--ПОДВАЛ САЙТА-->
+    <!--FOOTER-->
 
     <footer class="footer">
       <div class="footer container">
         <div class="footer-address">
-          <!--Лого-->
+          <!--Logo-->
           <a href="./index.html" class="footer-address__logo">
             <span class="footer-address__logo-bluepart">Web</span>Studio</a
           >
-          <!--Адрес-->
+          <!--Address-->
           <address>
             <ul class="address-list">
               <li class="address-list__item">
@@ -501,7 +505,7 @@
                   target="_blank"
                   rel="noopener nofollow noreferrer"
                   class="address-list__link address-list__link--white"
-                  >м. Київ, пр-т Лесі Українки, 26</a
+                  >695 Park Ave, New York, NY 10065</a
                 >
               </li>
               <li class="address-list__item">
@@ -510,15 +514,15 @@
                 </a>
               </li>
               <li class="address-list__item">
-                <a href="tel:+380961111111" class="address-list__link">+380961111111</a>
+                <a href="tel:+1 212-772-4150" class="address-list__link">+1 212-772-4150</a>
               </li>
             </ul>
           </address>
         </div>
 
-        <!--Социальные сети-->
+        <!--Socials-->
         <div class="footer-social">
-          <p class="footer-social__text">Приєднуйтесь</p>
+          <p class="footer-social__text">Find us on</p>
           <ul class="our-social-list">
             <li class="our-social-list__item">
               <a href="" class="our-social-list__link">
@@ -551,10 +555,10 @@
           </ul>
         </div>
 
-        <!--Рассылка-->
+        <!--Mailing-->
         <div class="footer-mailing">
           <form class="footer-form">
-            <label for="mailing" class="footer-form__label"> Підпишіться на розсилку </label>
+            <label for="mailing" class="footer-form__label">Subscribe to the newsletter</label>
             <div class="footer-form__thumb">
               <input
                 type="email"
@@ -565,7 +569,7 @@
                 required
               />
               <button type="submit" class="footer-form__button">
-                Підписатися
+                Suscribe
                 <svg class="footer-form__send-icon" width="24" height="24">
                   <use href="./images/main/icons.svg#icon-send"></use>
                 </svg>
@@ -576,7 +580,7 @@
       </div>
     </footer>
 
-    <!--Модальное окно формы-->
+    <!--Modal Window / Form-->
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close class="modal__close-button">
@@ -585,9 +589,9 @@
           </svg>
         </button>
         <form name="modal-form" class="modal-form">
-          <p class="modal-form__title">Залиште свої дані, ми вам передзвонимо</p>
+          <p class="modal-form__title">Leave your information and we'll call you back</p>
           <div class="form-group">
-            <label for="name" class="form-group__label">Ім'я</label>
+            <label for="name" class="form-group__label">Name</label>
             <div class="form-group__box">
               <input type="text" name="name" id="name" class="form-group__input" required />
               <svg class="form-group__icon" width="18" height="18">
@@ -596,7 +600,7 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="tel" class="form-group__label">Телефон</label>
+            <label for="tel" class="form-group__label">Telephone</label>
             <div class="form-group__box">
               <input type="tel" name="tel" id="tel" class="form-group__input" required />
               <svg class="form-group__icon" width="18" height="18">
@@ -605,7 +609,7 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="email" class="form-group__label">Пошта</label>
+            <label for="email" class="form-group__label">E-mail</label>
             <div class="form-group__box">
               <input type="email" name="email" id="email" class="form-group__input" required />
               <svg class="form-group__icon" width="18" height="18">
@@ -614,12 +618,12 @@
             </div>
           </div>
           <div class="form-group form-group--last">
-            <label for="comment" class="form-group__label">Коментар</label>
+            <label for="comment" class="form-group__label">Comments</label>
             <textarea
               name="comment"
               cols="30"
               rows="10"
-              placeholder="Введіть текст"
+              placeholder="Enter the text"
               id="comment"
               class="form-group__textarea"
             ></textarea>
@@ -635,17 +639,17 @@
               />
               <span class="agreements__checkbox-custom"></span>
               <span class="agreements__politic">
-                Погоджуюся з розсилкою та приймаю
-                <a href="" class="agreements__hypertext">Умови договору</a>
+                I agree with the newsletter and accept the
+                <a href="" class="agreements__hypertext">T and C</a>
               </span>
             </label>
           </div>
-          <button type="submit" class="modal-form__submit-button">Відправити</button>
+          <button type="submit" class="modal-form__submit-button">Send</button>
         </form>
       </div>
     </div>
 
-    <!--Модальное телефонное меню-->
+    <!--Mobile Menu-->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button
         class="menu-toggle js-close-menu"
@@ -659,19 +663,19 @@
 
       <ul class="menu-nav">
         <li class="menu-nav__item">
-          <a href="./index.html" class="menu-nav__link menu-nav__link--current">Студія</a>
+          <a href="./index.html" class="menu-nav__link menu-nav__link--current">Studio</a>
         </li>
         <li class="menu-nav__item">
-          <a href="./portfolio.html" class="menu-nav__link">Портфоліо</a>
+          <a href="./portfolio.html" class="menu-nav__link">Portfolio</a>
         </li>
         <li class="menu-nav__item">
-          <a href="index.html" class="menu-nav__link">Контакти</a>
+          <a href="index.html" class="menu-nav__link">Contacts</a>
         </li>
       </ul>
 
       <ul class="menu-contacts">
         <li class="menu-contacts__item">
-          <a href="tel:+380961111111" class="menu-contacts__link--accent"> +380961111111 </a>
+          <a href="tel:+380961111111" class="menu-contacts__link--accent"> +1 212-772-4150 </a>
         </li>
         <li class="menu-contacts__item">
           <a href="mailto:info@devstudio.com" class="menu-contacts__link"> info@devstudio.com </a>
@@ -685,14 +689,16 @@
         <li class="menu-social__item">
           <a href="" class="menu-social__link">Twitter</a>
         </li>
-        <li class="menu-social__item"><a href=""></a>Facebook</li>
+        <li class="menu-social__item">
+          <a href="" class="menu-social__link">Facebook</a>
+        </li>
         <li class="menu-social__item">
           <a href="" class="menu-social__link">LinkedIn</a>
         </li>
       </ul>
     </div>
 
-    <!--Скрипты-->
+    <!--Scripts-->
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script
