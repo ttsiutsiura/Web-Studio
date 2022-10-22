@@ -218,7 +218,10 @@
                     </a>
                   </li>
                   <li class="social-list__item">
-                    <a href="https://www.linkedin.com/in/kirill-tsiutsiura-068605254/" class="social-list__link">
+                    <a
+                      href="https://www.linkedin.com/in/kirill-tsiutsiura-068605254/"
+                      class="social-list__link"
+                    >
                       <svg class="social-list__icon" width="20" height="20">
                         <use href="./images/main/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -580,7 +583,15 @@
           <div class="form-group">
             <label for="name" class="form-group__label">Name</label>
             <div class="form-group__box">
-              <input type="text" name="name" id="name" class="form-group__input" required />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-group__input"
+                pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                title="Name must be two words separated by space."
+                required
+              />
               <svg class="form-group__icon" width="18" height="18">
                 <use href="./images/main/icons.svg#icon-user"></use>
               </svg>
@@ -589,7 +600,15 @@
           <div class="form-group">
             <label for="tel" class="form-group__label">Telephone</label>
             <div class="form-group__box">
-              <input type="tel" name="tel" id="tel" class="form-group__input" required />
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                class="form-group__input"
+                pattern="^[+]+[1-9]+[0-9]*$"
+                title="Here must be numbers with '+' 0_o."
+                required
+              />
               <svg class="form-group__icon" width="18" height="18">
                 <use href="./images/main/icons.svg#icon-oldphone"></use>
               </svg>
